@@ -1,0 +1,12 @@
+{
+  "name": "awatansa-bot",
+  "version": "1.0.0",
+  "description": "Discord Bot for myself",
+  "main": "index.js",
+  "author": "Awatansa Vishwakarma <ravi.awatansa@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "discord.js": "^13.2.0"
+  }
+}
