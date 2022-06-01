@@ -1,6 +1,6 @@
-import { config } from "dotenv";
-import { Client, Intents } from "discord.js";
-import { REPLIES } from "./lib";
+const { config } = require("dotenv");
+const { Client, Intents } = require("discord.js");
+const { REPLIES } = require("./lib");
 
 config();
 
@@ -14,6 +14,12 @@ client.on("ready", () => {
 
 client.on("messageCreate", (message) => {
   message.reply(REPLIES.HI);
+});
+
+client.on("messageCreate", (message) => {
+  if (message.content === "!ping") {
+    message.reply("pong");
+  }
 });
 
 client.login(process.env.DISCORD_BOT_TOKEN);

@@ -6,4 +6,4 @@ const REPLIES = {
   BRO: "Bruhhh!",
 };
 
-export { REPLIES };
+module.exports = REPLIES;
